@@ -7,10 +7,10 @@ import Content from './Content/Content';
 function App() {
   return (
     <div className={styles.App}>
-      <sidebar className='styles.sidebar'>
+      <div className='styles.sidebar'>
         <EmailWrite />
         <EmailActions />
-      </sidebar>
+      </div>
      
       <Content />
     </div>

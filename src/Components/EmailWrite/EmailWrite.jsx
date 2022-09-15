@@ -1,9 +1,12 @@
 import styles from './EmailWrite.module.css';
+import { NavLink } from "react-router-dom";
 function EmailWrite() {
     return (
       <div className={styles.EmailWrite}>
         <div className={styles.btn}>
-           EmailWrite
+        <NavLink to="newmsg">
+            Новое письмо
+        </NavLink>
         </div>
       </div>
     );

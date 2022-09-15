@@ -1,10 +1,10 @@
-import styles from './inbox.module.css';
-function inbox() {
+import styles from './Inbox.module.css';
+function Inbox() {
     return (
-      <div className={styles.inbox}>
+      <div className={styles.Inbox}>
         inbox
       </div>
     );
   }
   
-  export default inbox;
+  export default Inbox;
