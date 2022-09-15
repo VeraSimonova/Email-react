@@ -1,0 +1,14 @@
+.App{
+  background-color:#fff;
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 30px;
+  border-radius: 14px;
+  box-sizing: border-box;
+}
+.sidebar{
+  width: 200px;
+}
