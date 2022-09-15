@@ -1,29 +1,28 @@
 import styles from './EmailNav.module.css';
 import { NavLink } from "react-router-dom";
 
-let links = [
-  {name: 'входящие', link: '/'},
-  {name: 'Отправленные', link: '/1'},
-  {name: 'Спам', link: '/2'},
-]
 
-function EmailNav() {
 
+function EmailNav(props) {
+  let a = null;
     return (
       <div className={styles.EmailNav}>
-        <ul>
-          {
-            links.map((el)=>
-              <li>
-                <NavLink to={el.link} className={({isActive})=> 
-                  isActive ? styles.active : undefined}>
-                  {el.name}
-                </NavLink>
-              </li>
-            )
-          }
-          
-        </ul>
+        {a = props.name}
+        <div className={styles.a}>
+          <ul>
+            {
+              props.links.map((el, index)=>
+                <li key={index}>
+                  <NavLink to={el.link} className={({isActive})=> 
+                    isActive ? styles.active : undefined}>
+                    {el.name}
+                  </NavLink>
+                </li>
+              )
+            }
+            
+          </ul>
+        </div>
       </div>
     );
   }
